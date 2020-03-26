@@ -1,12 +1,12 @@
 Steps to run the code base:
 
-1. To install all the dependencies
-
 ### yarn install
 
-2. To start the server
+1. To install all the dependencies
 
 ### yarn start
+
+2. To start the server
 
 Steps to step up database:
 
@@ -14,7 +14,7 @@ Steps to step up database:
 
 sudo docker run -d -e POSTGRES_PASSWORD=test -e POSTGRES_USER=test -e POSTGRES_DB=test -p 5432:5432 postgres
 
-2. For migrations
+2. Run migrations
    ./node_modules/knex/bin/cli.js migrate:latest
 
 3. Run seed files
